@@ -72,6 +72,15 @@ npm install -g agent-pocket-mcp
 
 Then reference `agent-pocket-mcp` as the command instead of `npx … agent-pocket-mcp`.
 
+### Option 3 — Remote SSE / Streamable-HTTP (no local install)
+
+The hosted server exposes a remote MCP endpoint directly. Use this if you prefer not to run a local process — no npm install required.
+
+- **Streamable HTTP (modern):** `https://agent-from-pocket-production.up.railway.app/mcp`
+- **Legacy SSE (older clients):** `https://agent-from-pocket-production.up.railway.app/mcp/sse`
+
+Pass your API key via the `x-api-key` header or `?apiKey=` query param.
+
 ---
 
 ## Configuration
@@ -169,6 +178,57 @@ Open Cline settings → MCP Servers → Add Server:
   }
 }
 ```
+
+### Using the Remote SSE / Streamable-HTTP Endpoint
+
+For IDEs that support remote MCP servers (no local process), use a `url`-based config instead of `command`/`args`.
+
+#### Cursor
+
+```json
+{
+  "mcpServers": {
+    "agent-pocket": {
+      "url": "https://agent-from-pocket-production.up.railway.app/mcp",
+      "headers": {
+        "x-api-key": "your-api-key"
+      }
+    }
+  }
+}
+```
+
+#### Windsurf
+
+```json
+{
+  "mcpServers": {
+    "agent-pocket": {
+      "serverUrl": "https://agent-from-pocket-production.up.railway.app/mcp/sse",
+      "headers": {
+        "x-api-key": "your-api-key"
+      }
+    }
+  }
+}
+```
+
+#### Claude Code / Cline
+
+```json
+{
+  "mcpServers": {
+    "agent-pocket": {
+      "url": "https://agent-from-pocket-production.up.railway.app/mcp",
+      "headers": {
+        "x-api-key": "your-api-key"
+      }
+    }
+  }
+}
+```
+
+> **Tip:** If your IDE does not support `headers` in the MCP config, append `?apiKey=your-api-key` to the URL instead.
 
 ---
 
