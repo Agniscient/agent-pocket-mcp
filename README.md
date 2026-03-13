@@ -1,6 +1,6 @@
 # agent-pocket-mcp
 
-MCP server for [Agent Pocket](https://agentpocket.dev) — a human-in-the-loop approval bridge for AI coding agents.
+MCP server for Agent Pocket — a human-in-the-loop approval bridge for AI coding agents.
 
 Gives your AI agent (Cursor, Windsurf, Claude Code, Copilot, Cline) a set of tools to pause and ask you for approval, answers, or manual steps before taking risky actions — all routed through the Agent Pocket dashboard.
 
@@ -26,7 +26,7 @@ AI Agent  ──(MCP tool call)──▶  agent-pocket-mcp  ──(HTTP)──�
 
 - **Node.js** 18+
 - An **Agent Pocket** account with a running server instance  
-  (self-hosted or [agentpocket.dev](https://agentpocket.dev))
+  (hosted at `https://agent-from-pocket-production.up.railway.app`)
 - Your **API key** from the Agent Pocket dashboard
 
 ---
