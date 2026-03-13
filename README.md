@@ -31,6 +31,20 @@ AI Agent  ──(MCP tool call)──▶  agent-pocket-mcp  ──(HTTP)──�
 
 ---
 
+## Getting Your API Key
+
+1. Open the dashboard at `https://agent-from-pocket-production.up.railway.app`
+2. Sign in (or create an account via email OTP)
+3. Click the **Settings** tab (gear icon in the sidebar)
+4. Find the **Your API Key** panel
+5. Click the eye icon to reveal your key, then the copy icon to copy it
+
+> If you haven't generated a key yet, click **Regenerate** to create one.
+
+Use this key as `APPROVAL_API_KEY` in your MCP config or `.env` file.
+
+---
+
 ## Installation
 
 ### Option 1 — npx (no install)
