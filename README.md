@@ -42,7 +42,7 @@ AI Agent  ──(MCP tool call)──▶  agent-pocket-mcp  ──(HTTP)──�
       "command": "npx",
       "args": ["-y", "agent-pocket-mcp"],
       "env": {
-        "APPROVAL_SERVER_URL": "https://your-server.example.com",
+        "APPROVAL_SERVER_URL": "https://agent-from-pocket-production.up.railway.app",
         "APPROVAL_API_KEY": "your-api-key"
       }
     }
@@ -73,7 +73,7 @@ All configuration is via environment variables (or a `.env` file in the project 
 ### `.env` example
 
 ```env
-APPROVAL_SERVER_URL=https://your-server.example.com
+APPROVAL_SERVER_URL=https://agent-from-pocket-production.up.railway.app
 APPROVAL_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxx
 APPROVAL_TIMEOUT_SEC=300
 ```
@@ -93,7 +93,7 @@ Add to `~/.cursor/mcp.json` (global) or `.cursor/mcp.json` (project-level):
       "command": "npx",
       "args": ["-y", "agent-pocket-mcp"],
       "env": {
-        "APPROVAL_SERVER_URL": "https://your-server.example.com",
+        "APPROVAL_SERVER_URL": "https://agent-from-pocket-production.up.railway.app",
         "APPROVAL_API_KEY": "your-api-key"
       }
     }
@@ -112,7 +112,7 @@ Add to `~/.codeium/windsurf/mcp_config.json`:
       "command": "npx",
       "args": ["-y", "agent-pocket-mcp"],
       "env": {
-        "APPROVAL_SERVER_URL": "https://your-server.example.com",
+        "APPROVAL_SERVER_URL": "https://agent-from-pocket-production.up.railway.app",
         "APPROVAL_API_KEY": "your-api-key"
       }
     }
@@ -131,7 +131,7 @@ Add to `~/.claude/mcp.json`:
       "command": "npx",
       "args": ["-y", "agent-pocket-mcp"],
       "env": {
-        "APPROVAL_SERVER_URL": "https://your-server.example.com",
+        "APPROVAL_SERVER_URL": "https://agent-from-pocket-production.up.railway.app",
         "APPROVAL_API_KEY": "your-api-key"
       }
     }
@@ -149,7 +149,7 @@ Open Cline settings → MCP Servers → Add Server:
     "command": "npx",
     "args": ["-y", "agent-pocket-mcp"],
     "env": {
-      "APPROVAL_SERVER_URL": "https://your-server.example.com",
+      "APPROVAL_SERVER_URL": "https://agent-from-pocket-production.up.railway.app",
       "APPROVAL_API_KEY": "your-api-key"
     }
   }
