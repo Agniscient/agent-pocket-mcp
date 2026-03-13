@@ -1,0 +1,25 @@
+{
+  "name": "agent-pocket-mcp",
+  "version": "1.1.0",
+  "description": "MCP server for Agent Pocket — remote human approval bridge for AI agents",
+  "type": "module",
+  "bin": {
+    "agent-pocket-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0"
+  }
+}
